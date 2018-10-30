@@ -9,7 +9,7 @@
           input.form-control(id='block#{block.block}chain#{block.chain}number', type='number', value='#{block.block}' onchange='updateChain(#{block.block}, #{block.chain});' onkeyup='updateChain(#{block.block}, #{block.chain});')
 
     .form-group
-      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}nonce') #{__('Nonce')}:
+      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}nonce') #{__('随机数')}:
       .col-sm-10
          input.form-control(id='block#{block.block}chain#{block.chain}nonce', type='text', value='#{block.nonce}', onkeyup='updateChain(#{block.block}, #{block.chain});')
 
