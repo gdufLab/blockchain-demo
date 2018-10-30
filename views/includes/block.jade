@@ -2,7 +2,7 @@
   form.form-horizontal
 
     .form-group
-      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}number') #{__('Block')}:
+      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}number') #{__('区块')}:
       .col-sm-10
         .input-group
           span.input-group-addon #
@@ -14,17 +14,17 @@
          input.form-control(id='block#{block.block}chain#{block.chain}nonce', type='text', value='#{block.nonce}', onkeyup='updateChain(#{block.block}, #{block.chain});')
 
     .form-group
-      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}data') #{__('Data')}:
+      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}data') #{__('数据')}:
       .col-sm-10
         textarea.form-control(id='block#{block.block}chain#{block.chain}data', rows='10', onkeyup='updateChain(#{block.block}, #{block.chain});')
 
     #state.form-group
-      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}previous') #{__('Prev')}:
+      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}previous') #{__('前指针')}:
       .col-sm-10
         input.form-control(id='block#{block.block}chain#{block.chain}previous', type='text', value='#{block.previous}', disabled)
 
     #state.form-group
-      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}hash') #{__('Hash')}:
+      label.col-sm-2.control-label(for='block#{block.block}chain#{block.chain}hash') #{__('哈希')}:
       .col-sm-10
         input.form-control(id='block#{block.block}chain#{block.chain}hash', type='text', disabled)
 
@@ -33,4 +33,4 @@
         i.icon-spinner.icon-spin.icon-large
       .col-sm-10
         button.btn.btn-primary.ladda-button(id='block#{block.block}chain#{block.chain}mineButton', data-style='expand-right')
-          span.ladda-label #{__('Mine')}
+          span.ladda-label #{__('挖矿')}
